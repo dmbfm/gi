@@ -1,0 +1,7 @@
+[submodule "gitignore"]
+	path = gitignore
+	url = git@github.com:toptal/gitignore.git
+
+[submodule "src/zdf"]
+	path = src/zdf
+	url = git@github.com:dmbfm/zdf.git
