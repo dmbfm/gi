@@ -5,7 +5,16 @@ const data = @import("data");
 const stdout = std.io.getStdOut().writer();
 
 fn usage() !void {
-    try stdout.writeAll("Usage: gi [<template_name>...]\n");
+    try stdout.writeAll("Usage: gi [-l, --list] [<template_name>...]\n");
+}
+
+fn printAvailable() !void {
+    const templateNames = data.filenames;
+
+    try stdout.writeAll("Available templates:\n");
+    for (templateNames) |name| {
+        try stdout.print("\t{s}\n", .{name});
+    }
 }
 
 pub fn main() anyerror!void {
@@ -18,6 +27,11 @@ pub fn main() anyerror!void {
 
     if (args.argc < 2) {
         try usage();
+        return;
+    }
+
+    if (args.has("-l") or args.has("--list")) {
+        try printAvailable();
         return;
     }
 
