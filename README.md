@@ -12,7 +12,7 @@ cd gi
 zig build -Drelease-safe --prefix ~/.local
 ```
 
-to install `gi` to `~/.local/bin` (or replace this to any other location on your PATH).
+to install `gi` to `~/.local/bin` (or replace this with any other location on your PATH).
 
 
 ## Usage
