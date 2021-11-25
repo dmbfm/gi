@@ -8,7 +8,7 @@ in the compiled binary, so there is no need to keep a folder with the templates,
 Make sure you have the [zig](https://ziglang.org) compiler [installed](https://ziglang.org/download/) on your machine. Then:
 ```
 git clone --recurse-submodules https://github.com/dmbfm/gi.git
-cd runc
+cd gi
 zig build -Drelease-safe
 ```
 
