@@ -12,7 +12,8 @@ cd runc
 zig build -Drelease-safe
 ```
 
-Them copy or symlink the file `./zig-out/bin/gi` to a directory in your PATH and you can just call `gi` and use it:
+After that, copy or symlink the file `./zig-out/bin/gi` to a directory in your
+PATH and you can just call `gi` and use it:
 
 ```
 $ gi zig
