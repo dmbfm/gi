@@ -9,11 +9,11 @@ Make sure you have the [zig](https://ziglang.org) compiler [installed](https://z
 ```
 git clone --recurse-submodules https://github.com/dmbfm/gi.git
 cd gi
-zig build -Drelease-safe
+zig build -Drelease-safe --prefix ~/.local
 ```
 
-After that, copy or symlink the file `./zig-out/bin/gi` to a directory in your
-PATH and you can just call `gi` and use it.
+to install `gi` to `~/.local/bin` (or replace this to any other location on your PATH).
+
 
 ## Usage
 
