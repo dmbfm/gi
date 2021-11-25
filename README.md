@@ -5,7 +5,7 @@ Small program that generates .gitignore files. The templates are taken from
 in the compiled binary, so there is no need to keep a folder with the templates, making it easier to install. 
 
 ## Building and installation
-
+Make sure you have the [zig](https://ziglang.org) compiler [installed](https://ziglang.org/download/) on your machine. Then:
 ```
 git clone --recurse-submodules https://github.com/dmbfm/gi.git
 cd runc
